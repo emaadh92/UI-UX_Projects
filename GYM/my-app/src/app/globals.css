@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#hero {
+  background-image: url(./../../Public/gym_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+#about {
+  background-image: url(./../../Public/About.jpg);
+}
+
+#cont {
+  background-image: url(./../../Public/contact.jpg);
+
+}
+
+#cont-ma {
+  background-image: url(./../../Public/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#join {
+  background-image: url(./../../Public/joi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,53 @@
+/* Header.module.css */
+
+.header-container {
+    max-width: 1370px;
+    min-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Serif';
+    color: white;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #1e90ff; /* Light blue for hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+}

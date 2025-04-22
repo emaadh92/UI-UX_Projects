@@ -1,0 +1,94 @@
+
+
+.container {
+    max-width: 1370px;
+    min-width: 280px;
+    padding: 1.5rem;
+    background-color: #aa2020;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 5rem;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-x-3 {
+    gap: 0.75rem;
+}
+
+.gap-y-3 {
+    gap: 0.75rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    opacity: 0;
+    animation: slideInFromRight 0.6s ease-out forwards; 
+    animation-delay: 0.3s; 
+}
+
+.item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.item:nth-child(3) {
+    animation-delay: 0.7s;
+}
